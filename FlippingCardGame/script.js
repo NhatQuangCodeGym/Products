@@ -1,5 +1,4 @@
-availableImages = ['FlippingCardGame/Pictures/blue-monster.jpg', 'FlippingCardGame/Pictures/Doraemon.png', 'FlippingCardGame/Pictures/Doremi.jpg', 'FlippingCardGame/Pictures/Mouse.jpeg', 'FlippingCardGame/Pictures/Pikachu.png', 'FlippingCardGame/Pictures/shin.jpeg', 'FlippingCardGame/Pictures/Phineas.png', 'FlippingCardGame/Pictures/Mickey.png', 'FlippingCardGame/Pictures/blue-monster.jpg', 'FlippingCardGame/Pictures/Doraemon.png', 'FlippingCardGame/Pictures/Doremi.jpg', 'FlippingCardGame/Pictures/Mouse.jpeg', 'FlippingCardGame/Pictures/Pikachu.png', 'FlippingCardGame/Pictures/shin.jpeg', 'FlippingCardGame/Pictures/Phineas.png', 'FlippingCardGame/Pictures/Mickey.png']
-
+availableImages = ['Pictures/blue-monster.jpg','Pictures/Doraemon.png','Pictures/Doremi.jpg','Pictures/Mickey.png','Pictures/Mouse.jpeg','Pictures/Phineas.png','Pictures/Pikachu.png','Pictures/shin.jpeg','Pictures/blue-monster.jpg','Pictures/Doraemon.png','Pictures/Doremi.jpg','Pictures/Mickey.png','Pictures/Mouse.jpeg','Pictures/Phineas.png','Pictures/Pikachu.png','Pictures/shin.jpeg']
 function start(){
     let moves =0;
     const maindiv = document.getElementById("boardgame");
