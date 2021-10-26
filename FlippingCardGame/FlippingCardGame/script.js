@@ -1,7 +1,8 @@
-availableImages=['Images/bean.jpg','Images/doraemon.jpg','Images/minion.jpg','Images/mouse.jpg','Images/noddy.jpg','Images/popeye.jpg','Images/scooby.jpg','Images/shinchan.jpg','Images/bean.jpg','Images/doraemon.jpg','Images/minion.jpg','Images/mouse.jpg','Images/noddy.jpg','Images/popeye.jpg','Images/scooby.jpg','Images/shinchan.jpg']
- 
+availableImages = ['FlippingCardGame/Pictures/blue-monster.jpg', 'FlippingCardGame/Pictures/Doraemon.png', 'FlippingCardGame/Pictures/Doremi.jpg', 'FlippingCardGame/Pictures/Mouse.jpeg', 'FlippingCardGame/Pictures/Pikachu.png', 'FlippingCardGame/Pictures/shin.jpeg', 'FlippingCardGame/Pictures/Phineas.png', 'FlippingCardGame/Pictures/Mickey.png', 'FlippingCardGame/Pictures/blue-monster.jpg', 'FlippingCardGame/Pictures/Doraemon.png', 'FlippingCardGame/Pictures/Doremi.jpg', 'FlippingCardGame/Pictures/Mouse.jpeg', 'FlippingCardGame/Pictures/Pikachu.png', 'FlippingCardGame/Pictures/shin.jpeg', 'FlippingCardGame/Pictures/Phineas.png', 'FlippingCardGame/Pictures/Mickey.png']
+
 function start(){
     let moves =0;
+    const maindiv = document.getElementById("boardgame");
     while (maindiv.firstChild) {
         maindiv.removeChild(maindiv.lastChild);
     }
@@ -9,7 +10,7 @@ function start(){
     while (scorediv.firstChild) {
        scorediv.removeChild(scorediv.lastChild);
     }
- 
+
     var row = document.createElement('div')
     ImagesCopy= JSON.parse(JSON.stringify( availableImages))
     for(let j=1;j<=16;j++){
@@ -26,7 +27,7 @@ function start(){
             document.getElementById('boardgame').append(row)
             row = document.createElement('div')
         }
- 
+
         div.addEventListener('click',function(event){
             moves++;
             let curr = event.currentTarget.children
@@ -46,7 +47,7 @@ function start(){
                     }
                 }
             }
- 
+
             if(document.getElementsByClassName('match').length==16){
                 alert("You won !!! ")
                 let button = document.createElement('button');
@@ -55,7 +56,7 @@ function start(){
                 button.appendChild(node)
                 document.getElementById('score').appendChild(button) 
             }
- 
+
             if(flag==0)
             currImg.classList.add('showimg');
         })
