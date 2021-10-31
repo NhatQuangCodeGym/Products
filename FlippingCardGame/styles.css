@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    background-image: url('Pictures/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;}
+html, body {
+    height: 50%;
+}
+
+.jumbotron{
+    color: yellow;
+    background-color: transparent;
+}
+html {
+    display: table;
+    margin: auto;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+        .imgdiv{
+            position: relative;
+            display: inline-block;
+            width:150px;
+            height: 150px;
+            line-height: 150px;
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid black;
+            cursor: pointer;
+            background-color:white;
+        }
+        
+        img{
+            width:120px;
+            height: 120px;
+            padding: 10px;;
+            
+        }
+
+        .hide{
+            padding: 10px;
+            visibility: hidden;
+        }
+
+        .match, .showimg{
+            visibility: visible !important;
+        }
