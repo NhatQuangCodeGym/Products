@@ -44,13 +44,16 @@ function start() {
                         firstImg.classList.remove("showimg");
                         secondImg.classList.remove("showimg");
                         firstImg = secondImg = null;
-                    }, 200);
+                    }, 300);
                 } else
                     firstImg = secondImg = null;
             }
 
             if (document.getElementsByClassName('showimg').length == 16) {
-                alert("You won !!! ")
+                setTimeout(function () {
+                    alert("You won !!! ")
+                }, 1000);
+                
                 let button = document.createElement('button');
                 button.setAttribute('class', 'btn btn-warning');
                 let node = document.createTextNode("You won!!! Moves " + moves);
